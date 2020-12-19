@@ -1,10 +1,5 @@
 # Rural Healthcare Management System
 
-
-
-
-
-
 # Dataflow
 
 ```
@@ -44,17 +39,20 @@ Doctor's Portal
 
 ```
 
-
 # Commands to be followed
 
 ```bash
 git clone <original-repo-link>
 ```
-Before coding:
+
+Everytime, before you start coding:
+
 ```bash
 git pull
 ```
-After coding:
+
+After you have made changes:
+
 ```
 git pull
 git add .
