@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="shortcut icon" type="image/png" href="../images/icons8-doctor-male-80.png"/>
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+        type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                "google_translate_element"
+            );
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img class="logo" type="image/png" href="assets/images/favicon.png">
+            </li>
+			<li><a href="../../index.html">Home</a> </li>
+			<li><a href="#">About Us +</a></li>
+			<li><a href="../doctor/doctor.html">Doctor</a></li>
+            <li><a href="patient.html">Patient</a></li>
+            <div id="google_translate_element"></div>
+		</ul>
+    </nav>
+
+    <main>
+        <img class="svg-pic" type="image/svg" src="../images/Virus transmission-rafiki.svg" alt="">
+        <div class="enter-phone">
+          <div class="form">
+            <h2>Please enter your Phone Number</h2>
+          
+            <div class = "floating-label" id = "NumberWrapper">
+              <input
+                id = "Number"
+                type = "tel"
+                placeholder = "placeholder"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required=""
+              />
+              <label for = "Number">Contact Number</label>
+            </div>
+            
+            <h5><sup>*</sup> A 4-digit OTP will be sent to your Phone Number</h5>
+    
+            <div class = "floating-label hide" id = "OtpWrapper">
+              <input
+                id = "Otp"
+                type = "otp"
+                placeholder = "placeholder"
+                pattern="[0-9]{4}"
+                maxlength="4"
+                required=""
+              />
+              <label for = "Otp">OTP</label>
+            </div>
+    
+            <div class="btn">
+              <div class="sub-btn">
+                <button type="submit" id="Submit">SUBMIT</button>
+              </div>
+    
+              <div class="hide">
+                <button id="Resend">Re-Send OTP</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    
+      </main>
+</body>
+</html>
