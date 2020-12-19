@@ -1,4 +1,4 @@
-# rural-healthcare-management-system
+# Rural Healthcare Management System
 
 
 
@@ -42,4 +42,22 @@ Doctor's Portal
 - History of Patients
 
 
+```
+
+
+# Commands to be followed
+
+```bash
+git clone <original-repo-link>
+```
+Before coding:
+```bash
+git pull
+```
+After coding:
+```
+git pull
+git add .
+git commit -m "appropriate git message"
+git push
 ```
