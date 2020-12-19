@@ -1,4 +1,4 @@
-# rural-healthcare-management-system
+# Rural Healthcare Management System
 
 
 
