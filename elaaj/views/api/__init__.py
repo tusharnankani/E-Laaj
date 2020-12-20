@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 
 bp = Blueprint("api", __name__, url_prefix="/api")
 
-@bp.route("/phoneCheck")
-def phoneCheck():
+@bp.route("/otpCheck")
+def otpCheck():
   phone = request.args.get("phone")
   otp = request.args.get("otp")
   try:
@@ -20,7 +20,6 @@ def phoneCheck():
     return jsonify(isCorrect=True)
   return jsonify(isCorrect=False)
     
-
 @bp.route("/<string:apiType>")
 def apiDbGetter(apiType):
   if(not db.engine.dialect.has_table(db.engine, apiType)):
