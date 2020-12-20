@@ -12,8 +12,9 @@ Making healthcare in rural areas more accessible.
 - Database
  - SQLite
  
-![Screenshot (815)](https://user-images.githubusercontent.com/61280281/102720682-bf718d00-431b-11eb-9229-d73d53f83e07.png)
 ![Screenshot (814)](https://user-images.githubusercontent.com/61280281/102720683-c13b5080-431b-11eb-9fc8-25fc764e0ed8.png)
+ 
+![Screenshot (815)](https://user-images.githubusercontent.com/61280281/102720682-bf718d00-431b-11eb-9229-d73d53f83e07.png)
 
 
 # Dataflow
