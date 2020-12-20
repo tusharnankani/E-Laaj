@@ -3,3 +3,6 @@
 
 #Settings
 */instance
+
+#Pycache
+__pycache__
