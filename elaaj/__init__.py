@@ -16,7 +16,8 @@ def create_app():
     from elaaj.models import db
     db.db.init_app(app)
 
-    from elaaj.views import index
+    from elaaj.views import index, api
     app.register_blueprint(index.bp)
+    app.register_blueprint(api.bp)
 
   return app
