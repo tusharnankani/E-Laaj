@@ -4,6 +4,17 @@ from datetime import datetime, timedelta
 
 bp = Blueprint("api", __name__, url_prefix="/api")
 
+@bp.route("/phoneCheck")
+def phoneCheck():
+  phone = request.args.get("phone")
+  try:
+    phone=int(phone)
+  except:
+    return jsonify(phoneExists=None)
+  if(not PhoneCodes.query.filter_by(phone=phone).first()):
+    return jsonify(phoneExists=False)
+  return jsonify(phoneExists=True)
+
 @bp.route("/otpCheck")
 def otpCheck():
   phone = request.args.get("phone")
@@ -16,7 +27,7 @@ def otpCheck():
   if(not phone or not otp):
     return jsonify(isCorrect=False)
   phoneDb = PhoneCodes.query.filter_by(phone=phone).first()
-  if(phoneDb and phoneDb.otp == otp and datetime.fromtimestamp(phoneDb.expire) > datetime.now() """not expired"""):
+  if(phoneDb and phoneDb.otp == otp and datetime.fromtimestamp(phoneDb.expire) > datetime.now()):
     return jsonify(isCorrect=True)
   return jsonify(isCorrect=False)
     
