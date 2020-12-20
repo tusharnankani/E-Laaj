@@ -19,6 +19,12 @@ class Patients(db.Model):
   surname = db.Column(db.Text, nullable=False)
   age = db.Column(db.Integer, nullable=False)
   phone = db.Column(db.Integer, nullable=False)
+
+class PhoneCodes(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  phone = db.Column(db.Integer, nullable=False)
+  otp = db.Column(db.Text, nullable=False)
+  expire = db.Column(db.Integer, nullable=False)
   
 
 def init_db():
