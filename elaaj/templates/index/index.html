@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Laaj</title>
 
-    <link rel="shortcut icon" type="image/png" href="assets/images/icons8-doctor-male-80.png"/>
-    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/icons8-doctor-male-80.png') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
 
     <script
         type="text/javascript"
@@ -25,9 +25,9 @@
     <nav>
         <ul>
             <li>
-                <img class="logo" type="image/png" href="assets/images/favicon.png">
+                <img class="logo" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
             </li>
-			<li><a href="index.html">Home</a> </li>
+			<li><a href="{{ url_for('index.index') }}">Home</a> </li>
 			<li><a href="#">About Us +</a></li>
 			<li><a href="assets/doctor/doctor.html">Doctor</a></li>
             <li><a href="assets/patient/patient.html">Patient</a></li>
@@ -38,9 +38,9 @@
 
     <div class="container">
         <div>
-			<a href="index.html" id = "company-name">E-Laaj</a>
+			<a href="{{ url_for('index.index') }}" id = "company-name">E-Laaj</a>
 			<div id = "tagline">Rural Healthcare Management System</div>
-            <img class="svg-pic" type="image/svg" src="assets/images/Person with a cold-rafiki.svg" alt="">
+            <img class="svg-pic" type="image/svg" src="{{ url_for('static', filename='images/Person with a cold-rafiki.svg') }}" alt="">
         </div>       
     </div>   
 </body>
