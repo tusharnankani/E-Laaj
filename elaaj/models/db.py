@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-class Doctor(db.Model):
+class Doctors(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   name = db.Column(db.Text, nullable=False)
   surname = db.Column(db.Text, nullable=False)
@@ -13,7 +13,7 @@ class Doctor(db.Model):
   yoe = db.Column(db.Integer, nullable=False)
   location = db.Column(db.Text, nullable=False)
 
-class Patient(db.Model):
+class Patients(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   name = db.Column(db.Text, nullable=False)
   surname = db.Column(db.Text, nullable=False)
