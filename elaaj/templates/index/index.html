@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Laaj</title>
+    <title>alvis</title>
 
     <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/icons8-doctor-male-80.png') }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
@@ -26,10 +26,11 @@
         <ul>
             <li>
                 <img class="logo" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+                <img src="img_pic1.jpg" alt="pic1 in a jacket" width="500" height="600">
             </li>
 			<li><a href="{{ url_for('index.index') }}">Home</a> </li>
 			<li><a href="#">About Us +</a></li>
-			<li><a href="assets/doctor/doctor.html">Doctor</a></li>
+			<li><a href="assets/doctor/doctor.html">Clinical officer</a></li>
             <li><a href="{{ url_for('patient.patient') }}">Patient</a></li>
             <div id="google_translate_element"></div>
 		</ul>
@@ -38,8 +39,8 @@
 
     <div class="container">
         <div>
-			<a href="{{ url_for('index.index') }}" id = "company-name">E-Laaj</a>
-			<div id = "tagline">Rural Healthcare Management System</div>
+			<a href="{{ url_for('index.index') }}" id = "company-name">moshino</a>
+			<div id = "tagline">eHealthcare Management System</div>
             <img class="svg-pic" type="image/svg" src="{{ url_for('static', filename='images/Person with a cold-rafiki.svg') }}" alt="">
         </div>       
     </div>   
